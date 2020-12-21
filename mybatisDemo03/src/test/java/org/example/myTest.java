@@ -6,8 +6,6 @@ import com.test01.impl.StudentImpl;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.*;
 import org.junit.Test;
-
-import javax.annotation.Resource;
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.SQLOutput;
