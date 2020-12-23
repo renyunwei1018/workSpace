@@ -3,7 +3,6 @@ package org.example;
 import com.test01.Util;
 import com.test01.dao.StudentDao;
 import com.test01.domain.Student;
-import com.test01.impl.StudentImpl;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.*;
 import org.junit.Test;
@@ -29,6 +28,38 @@ public class myTest {
             System.out.println(stu);
         }
     }
+    //使用类对象作为传入参数
+    @Test
+    public void test02(){
+        StudentDao mapper = Util.sqlSession.getMapper(StudentDao.class);
+        mapper.addStu(new Student(2,65,"黄忠","huangzhong@sanguo.com"));
+        Util.sqlSession.commit();
+    }
 
+    @Test
+    public void test03(){
+        StudentDao mapper = Util.sqlSession.getMapper(StudentDao.class);
+        List<Student> list = mapper.selectById(12);
+        for(Student stu:list){
+            System.out.println(stu);
+        }
+    }
+
+    //@Param方式传入多个基础数据类型或者String类型
+
+    /**
+     * 1、另外可以使用map方法传值，映射文件中使用key值作为占位符来接收
+     * 2、也可以通过参数位置传值，映射文件中使用arg0，args1..来接收
+     * 3、使用对象传值，映射文件中占位符可以是对象的属性名称
+     *
+     */
+    @Test
+    public void test04(){
+        StudentDao mapper = Util.sqlSession.getMapper(StudentDao.class);
+        List<Student> list = mapper.selectMulitParam("赵云", 26);
+        for (Student student : list){
+            System.out.println(student);
+        }
+    }
 
 }

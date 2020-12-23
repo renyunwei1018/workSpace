@@ -13,6 +13,24 @@
         insert into t_stu(id,age,name,email) values(#{id},#{age}
         ,#{name},#{email})
     </insert>
+    <!--
+    基础数据类型，占位符号可以使用任意标识
+    引用数据类型，占位符号必须使用对应属性的名称
+
+    当mybatis遇到占位符号的时候，会创建connection 和 prepardStatement对象
+    String sql = select * from t_stu where id=?;
+    PreparedStatement pst = connection.preparedStatement(sql)
+    pst.setInt(1,12);这里的id值是传入进来的
+    ResultSet set = pst.executeQuery();
+
+    -->
+    <select id="selectById" resultType="com.test01.domain.Student">
+        select * from t_stu where id=#{id}
+    </select>
+
+    <select id="selectMulitParam" resultType="com.test01.domain.Student">
+        select * from t_stu where name = #{myName} and age = #{myAge}
+    </select>
 </mapper>
 
 <!--
