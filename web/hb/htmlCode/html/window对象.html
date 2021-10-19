@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" value="打开新的页面" id="openQ" />
+		<input type="button" value="关闭新的页面" id="closeQ" />
+		<script>
+			/*
+				1、创建
+				2、方法
+					* alert()
+					* confirm()显示确定取消框
+						如果用户点击确定按钮返回true
+						如果用户点击取消则点击false
+					*prompt("提示信息")弹出输入框
+					* open方法
+					* close方法
+				3、属性
+					* history
+					* location
+					* Navigator
+					* screen
+				4、特点
+					* window对象不需要创建可以直接使用，window.方法名()
+					* window可以省略，方法名()
+			*/
+		   // var flag = confirm("是否退出");
+		   // document.write(flag);
+		   
+		   // var reason = prompt("请输入错误原因");
+		   // document.write(reason);
+		   // setTimeout("alert(\"boom~~\")",2000);
+		   var in1 = setInterval("alert(\"每两秒炸一次\")",2000);
+		   var openQ = document.getElementById("openQ");
+		   var newWindow;
+		   openQ.onclick = function(){
+			   newWindow = open("http://www.baidu.com");
+				clearInterval(in1);
+		   }
+		   
+		   var closeQ = document.getElementById("closeQ");
+		   closeQ.onclick = function(){
+			   newWindow.close();
+		   }
+		</script>
+	</body>
+</html>

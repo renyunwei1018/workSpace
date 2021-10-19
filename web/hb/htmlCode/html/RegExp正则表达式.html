@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			// var reg = new RegExp("表达式")注意斜杆反编译
+			//var reg = /^表达式$/;
+			
+			var reg = new RegExp("\\w{6,12}");
+			// var reg = /^\w{6,12}$/;
+			var username = "username";
+			var flag = reg.test(username);
+			alert(flag);
+		</script>
+	</body>
+</html>

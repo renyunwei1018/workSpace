@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>inner Html</title>
+	</head>
+	<style>
+	
+		table{
+			margin-top: 50px;
+			width: 800px;
+			height: 50px;
+			box-sizing: border-box;
+		}
+		td{
+			text-align: center;
+		}
+	</style>
+	<body>
+		<div align="center">
+			<input type="text" id="no" placeholder="请输入编号" name="no" />
+			<input type="text" id= "name" placeholder="请输入姓名" name="name" />
+			<input type="text" id="gender" placeholder="请输入性别" name="gen"/>
+			<input type="button" id= "btu" value="添加" />
+		</div>
+		<table border="1px" align="center">
+			<tr>
+				<td colspan="4" align="center">学生信息表</td>
+			</tr>
+			<tr>
+				<td>编号</td>
+				<td>姓名</td>
+				<td>性别</td>
+				<td>操作</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>岳不群</td>
+				<td>未知</td>
+				<td><a href="javascript:void(0);" onclick="del(this);">删除</a></td>
+			</tr>
+		</table>
+		<script>
+			document.getElementById("btu").onclick=function(){
+				var id = document.getElementById("no").value;
+				var name = document.getElementById("name").value;
+				var gender = document.getElementById("gender").value;
+				
+				//获取table对象
+				var table = document.getElementsByTagName("table")[0];
+				table.innerHTML += "<tr><td>"+id+"</td>"
+				+"<td>"+name+"</td>"
+				+"<td>"+gender+"</td>"
+				+"<td><a href=\"javascript:void(0);\" onclick=\"del(this);\">删除</a></td>"
+				+"</tr>";
+			}
+			
+			function del(obj){
+				var table = obj.parentNode.parentNode.parentNode;
+				var tr = obj.parentNode.parentNode;
+				table.removeChild(tr);
+			}
+		</script>
+	</body>
+</html>

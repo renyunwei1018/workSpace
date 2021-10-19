@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>表单演示</title>
+	</head>
+	<body bgcolor="aliceblue">
+		<!--
+		1、表单用于收集用户信息后提交给服务器
+		2、form 标签
+		3、一个网页中可以有多个表单
+		4、action用于指定数据提交地址
+		-->
+		<form action="http://192.168.11.3:8080/oa/save">
+			<input type="number">
+			<input type="password">
+			<table>
+				<tr>
+					<td>账号</td>
+					<td><input type="text" name="username"></td>
+				</tr>
+				<tr>
+					<td>密码</td>
+					<td><input type="password" name="password"></td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="提交"></td>
+					<td><input type="reset" value="清空"></td>
+				</tr>
+			</table>
+			<!--
+				普通按钮不能提交表单，
+				只能使用type submit才能提交表单中的数据
+			-->
+			<input type="submit" value="注册">
+			<input type="button" value="按钮">
+		</form>
+		
+	</body>
+</html>

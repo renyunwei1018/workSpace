@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<img src="../img/1.jpg" id="car1" width="100%"/>
+		<!-- <img src="../img/2.jpg" id="car2" />
+		<img src="../img/3.jpg" id="car3" /> -->
+		<script>
+			
+			var a=0;
+			
+			setInterval(lun,2000);
+			function lun(){
+				debugger;
+				
+				var car = document.getElementById("car1");
+				if(a==1){
+					car.src = "../img/1.jpg";
+					a=2;
+				}else if(a==2){
+					car.src = "../img/3.jpg";
+					a=3;
+				}else{
+					car.src="../img/2.jpg";
+					a=1;
+				}
+				
+			}
+			location.reload();
+			
+		</script>
+		
+	</body>
+</html>

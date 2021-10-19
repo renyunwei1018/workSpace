@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<img src="../img/light_off.jpg" id="light" />
+		<script>
+			var flag =false;
+			var light = document.getElementById("light");
+			light.onclick = function(){
+				if(flag){
+					light.src = "../img/light_off.jpg";
+					flag=false;
+				}else{
+					light.src = "../img/light_on2.jpg";
+					flag=true;
+				}
+			}
+		</script>
+	</body>
+</html>

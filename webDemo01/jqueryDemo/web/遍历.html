@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+
+<script>
+    //js的遍历方式
+    // $(function () {
+    //     var citys = $("#ul1 > li");
+    //     for (var i=0;i<citys.length;i++){
+    //         alert($(citys[i]).html())
+    //     }
+    // });
+
+    //each遍历
+    $(function () {
+            var citys = $("#ul1 > li");
+            // citys.each(function (index,element) {
+            //     alert(index+":"+element.innerHTML);
+            // });
+            for (c of citys){
+                alert(c.innerHTML)
+            }
+        }
+    );
+
+</script>
+
+<ul id="ul1">
+    <li>北京</li>
+    <li>上海</li>
+    <li>深圳</li>
+    <li>杭州</li>
+    <li>武汉</li>
+    <li>成都</li>
+</ul>
+</body>
+</html>

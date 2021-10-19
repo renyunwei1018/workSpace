@@ -7,6 +7,14 @@
         <option value="$PROJECT_DIR$/../mybatis-proxy/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../mybatis-proxy/springDemo01/pom.xml" />
+        <option value="$PROJECT_DIR$/../mybatis-proxy/springDemo02/pom.xml" />
+      </set>
+    </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_14" default="false" project-jdk-name="openjdk-14" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_14" default="false" project-jdk-name="openjdk-14" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/../xmlDemo/output" />
+  </component>
 </project>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FilterDemo/FilterDemo.iml" filepath="$PROJECT_DIR$/FilterDemo/FilterDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ajaxAndJson/ajaxAndJson.iml" filepath="$PROJECT_DIR$/ajaxAndJson/ajaxAndJson.iml" />
+      <module fileurl="file://$PROJECT_DIR$/checkCode/checkCode.iml" filepath="$PROJECT_DIR$/checkCode/checkCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cookieDemo/cookieDemo.iml" filepath="$PROJECT_DIR$/cookieDemo/cookieDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dataSourceDemo/dataSourceDemo.iml" filepath="$PROJECT_DIR$/dataSourceDemo/dataSourceDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day01/day01.iml" filepath="$PROJECT_DIR$/day01/day01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day02/day02.iml" filepath="$PROJECT_DIR$/day02/day02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day03/day03.iml" filepath="$PROJECT_DIR$/day03/day03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/elDemo/elDemo.iml" filepath="$PROJECT_DIR$/elDemo/elDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fileDownLoad/fileDownLoad.iml" filepath="$PROJECT_DIR$/fileDownLoad/fileDownLoad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jqueryDemo/jqueryDemo.iml" filepath="$PROJECT_DIR$/jqueryDemo/jqueryDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jstlDemo/jstlDemo.iml" filepath="$PROJECT_DIR$/jstlDemo/jstlDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/loginDemo/loginDemo.iml" filepath="$PROJECT_DIR$/loginDemo/loginDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/normalTest/normalTest.iml" filepath="$PROJECT_DIR$/normalTest/normalTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sessionDemo/sessionDemo.iml" filepath="$PROJECT_DIR$/sessionDemo/sessionDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/userTableDemo01/userTableDemo01.iml" filepath="$PROJECT_DIR$/userTableDemo01/userTableDemo01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webDemo01.iml" filepath="$PROJECT_DIR$/webDemo01.iml" />
+    </modules>
+  </component>
+</project>

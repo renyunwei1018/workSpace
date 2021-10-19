@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<students xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation = "http://yunwei.com/student student.xsd"
+        xmlns="http://yunwei.com/student">
+
+    <student number="">
+        <name></name>
+        <age></age>
+        <sex></sex>
+    </student>
+</students>

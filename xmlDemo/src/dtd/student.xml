@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE students SYSTEM "D:\workSpace\xml\src\dtd\student.dtd">
+<students>
+    <student number="s1">
+        <name>张三</name>
+        <age>23</age>
+        <sex>男</sex>
+    </student>
+</students>
+<!--
+<!DOCTYPE students [
+    <!ELEMENT students (student*)>
+    <!ELEMENT student (name,age,sex)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT age (#PCDATA)>
+    <!ELEMENT sex (#PCDATA)>
+    <!ATTLIST student number ID #REQUIRED>
+]>
+
+-->

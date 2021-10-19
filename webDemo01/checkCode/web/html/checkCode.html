@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>验证码</title>
+    <style>
+        #checkCode{
+            margin:300px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="/checkCode" id="checkCode">
+    </div>
+
+    <script>
+        var htmlElement  = document.getElementById("checkCode");
+        htmlElement.onclick = function () {
+            var date = new Date();
+            var time = date.getTime();
+            htmlElement.setAttribute("src","/checkCode?"+time);
+        }
+
+
+    </script>
+</body>
+</html>

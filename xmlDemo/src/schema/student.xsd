@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<!--
+    targetNamespace:命名空间
+ -->
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://yunwei.com/student"
+            >
+    <xsd:element name="students" type="studentsType" /> <!--根元素为students-->
+    <xsd:complexType name="studentsType"> <!--创建复杂类型的时候，需要查看引用的name-->
+        <xsd:sequence>
+            <xsd:element name="student" type="studentType" minOccurs="0"
+                         maxOccurs="unbounded" />
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="studentType"><!--创建复杂类型的时候，需要查看引用的name-->
+        <xsd:sequence>
+            <xsd:element name="name" type="xsd:string" />
+            <xsd:element name="age" type="ageType" />
+            <xsd:element name="sex" type="sexType" />
+        </xsd:sequence><!--student类型下的元素-->
+        <xsd:attribute name="number" type="numberType" use="required"><!--student的属性-->
+    </xsd:complexType>
+
+    <xsd:simpleType name="ageType"><!--age元素的具体情况-->
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="0" />
+            <xsd:maxInclusive value="120" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+
+    <xsd:simpleType name="numberType"><!--number属性的具体情况-->
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="ITCAST_\d{4}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="sexType"><!--sex属性的具体情况-->
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="male"/>
+            <xsd:enumeration value="female"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+</xsd:schema>
