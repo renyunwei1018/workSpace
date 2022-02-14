@@ -10,8 +10,10 @@
       <module fileurl="file://$PROJECT_DIR$/day01/day01.iml" filepath="$PROJECT_DIR$/day01/day01.iml" />
       <module fileurl="file://$PROJECT_DIR$/day02/day02.iml" filepath="$PROJECT_DIR$/day02/day02.iml" />
       <module fileurl="file://$PROJECT_DIR$/day03/day03.iml" filepath="$PROJECT_DIR$/day03/day03.iml" />
+      <module fileurl="file://$USER_HOME$/IdeaProjects/demo/demo.iml" filepath="$USER_HOME$/IdeaProjects/demo/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/elDemo/elDemo.iml" filepath="$PROJECT_DIR$/elDemo/elDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/fileDownLoad/fileDownLoad.iml" filepath="$PROJECT_DIR$/fileDownLoad/fileDownLoad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jedis/jedis.iml" filepath="$PROJECT_DIR$/jedis/jedis.iml" />
       <module fileurl="file://$PROJECT_DIR$/jqueryDemo/jqueryDemo.iml" filepath="$PROJECT_DIR$/jqueryDemo/jqueryDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/jstlDemo/jstlDemo.iml" filepath="$PROJECT_DIR$/jstlDemo/jstlDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/loginDemo/loginDemo.iml" filepath="$PROJECT_DIR$/loginDemo/loginDemo.iml" />

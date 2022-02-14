@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <script>
+        function func() {
+            $.ajax({
+                url:"/ajaxDemoServlet",
+                type:"get",
+                success:function () {
+                    alert();
+                },
+                data:"userName=lulu",
+                sync:true
+            })
+
+        }
+    </script>
+
+    <input type="button" onclick="func()">
+
+</body>
+</html>
