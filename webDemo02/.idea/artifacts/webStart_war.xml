@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="webStart:war">
+    <output-path>$PROJECT_DIR$/../webStart/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>webStart</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="webStart.war">
+      <element id="artifact" artifact-name="webStart:war exploded" />
+    </root>
+  </artifact>
+</component>

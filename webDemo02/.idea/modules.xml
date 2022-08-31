@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/loginDemo02/loginDemo02.iml" filepath="$PROJECT_DIR$/loginDemo02/loginDemo02.iml" />
-      <module fileurl="file://$PROJECT_DIR$/webDemo02.iml" filepath="$PROJECT_DIR$/webDemo02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../webStart/webStart.iml" filepath="$PROJECT_DIR$/../webStart/webStart.iml" />
     </modules>
   </component>
 </project>

@@ -15,4 +15,5 @@ public interface UserDao {
     List<User> queryUserByPage(int currentPage, int rows,Map<String,String[]> conditionMap);
     int addUser(User user);
     int deleteUser(String id);
+    int updateUser(String id,User user);
 }

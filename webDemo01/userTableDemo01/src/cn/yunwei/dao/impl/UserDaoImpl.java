@@ -6,6 +6,7 @@ import cn.yunwei.util.JDBCUtils;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCreator;
+import org.springframework.jdbc.core.PreparedStatementSetter;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.util.StringUtils;
@@ -16,6 +17,8 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
+
+
 
 public class UserDaoImpl implements UserDao {
     private DataSource dataSource = JDBCUtils.getDataSource();
@@ -127,6 +130,26 @@ public class UserDaoImpl implements UserDao {
         String sql = "delete from user where id=?";
         System.out.println(sql + id);
         int update = jdbcTemplate.update(sql, id);
+        return update;
+
+    }
+
+    @Override
+    public int updateUser(String id, User user) {
+        String sql ="update user set name=?,age=?,address=?,email=?,QQ=?,gender=? where id=?";
+        int update = jdbcTemplate.update(sql, new PreparedStatementSetter() {
+            @Override
+            public void setValues(PreparedStatement preparedStatement) throws SQLException {
+                preparedStatement.setString(1, user.getName());
+                preparedStatement.setString(3, user.getAddress());
+                preparedStatement.setString(4, user.getEmail());
+                preparedStatement.setString(5, user.getQQ());
+                preparedStatement.setString(6, user.getGender());
+                preparedStatement.setInt(2, user.getAge());
+                preparedStatement.setString(7, id);
+            }
+
+        });
         return update;
     }
 }
